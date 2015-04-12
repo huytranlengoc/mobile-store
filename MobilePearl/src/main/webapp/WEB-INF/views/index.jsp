@@ -15,8 +15,9 @@
 		</c:if>
 	</div>
 	<div style="float: left; padding-left: 20px;">
-		<h3 style="color: green">Products List (Click to see more details)</h3>
+		<h3 style="color: green">Products List</h3>
 		(Click to see more details)
+		<br/>
 		<c:if test="${not empty products}">
 			<table border="1">
 				<thead>
@@ -47,7 +48,7 @@
 						<td>${p.cpu}</td>
 						<td>${p.camera}</td>
 						<td>${p.pin}</td>
-						<td><a href="">Add to Cart</a></td>
+						<td><a href="<c:url value="/cart/add/${p.id}"/>">Add to Cart</a></td>
 					</tr>
 				</c:forEach>
 				</tbody>

@@ -2,6 +2,8 @@ package org.pearl.mobilepearl.controller;
 
 import java.util.List;
 
+import javax.servlet.http.HttpSession;
+
 import org.pearl.mobilepearl.domain.Category;
 import org.pearl.mobilepearl.domain.Product;
 import org.pearl.mobilepearl.service.AccountService;
@@ -40,5 +42,11 @@ public class HomeController {
 	public String list(ModelMap model) {
 		model.addAttribute("listAccount", this.accService.getList());
 		return "list";
+	}
+	
+	@RequestMapping(value = {"/index"}, method = RequestMethod.POST)
+	public String turn(HttpSession session) {
+		session.invalidate();
+		return "index";
 	}
 }

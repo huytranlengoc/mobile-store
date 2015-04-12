@@ -114,3 +114,4 @@
 		</tr>
 	</table>
 </fieldset>
+<h3><a href="<c:url value="/cart/add/${product.id}"/>">Add to Cart</a></h3>

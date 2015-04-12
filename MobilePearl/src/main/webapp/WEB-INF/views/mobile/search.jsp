@@ -48,7 +48,7 @@
 					<td>${p.cpu}</td>
 					<td>${p.camera}</td>
 					<td>${p.pin}</td>
-					<td><a href="">Add to Cart</a></td>
+					<td><a href="<c:url value="/cart/add/${p.id}"/>">Add to Cart</a></td>
 				</tr>
 			</c:forEach>
 		</tbody>

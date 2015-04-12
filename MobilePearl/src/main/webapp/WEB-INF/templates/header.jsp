@@ -11,7 +11,7 @@
 	</c:if>
 	<c:if test="${acc ne null}">
 		Welcome, ${acc}!<br />
-		<a href="">Shopping Cart</a> | 
+		<a href="<c:url value="/cart/checkout"/>">Shopping Cart</a> | 
 		<a href="${pageContext.request.contextPath}/logout">Logout</a>
 	</c:if>
 </div>

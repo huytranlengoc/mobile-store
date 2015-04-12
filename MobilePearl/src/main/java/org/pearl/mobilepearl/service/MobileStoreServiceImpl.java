@@ -1,7 +1,6 @@
 package org.pearl.mobilepearl.service;
 
 import java.util.List;
-
 import org.pearl.mobilepearl.domain.Category;
 import org.pearl.mobilepearl.domain.DetailProduct;
 import org.pearl.mobilepearl.domain.Product;
@@ -45,5 +44,4 @@ public class MobileStoreServiceImpl implements MobileStoreService {
 	public DetailProduct findDetailProduct(Integer productId) {
 		return this.productDAO.findDetailProduct(productId);
 	}
-	
 }

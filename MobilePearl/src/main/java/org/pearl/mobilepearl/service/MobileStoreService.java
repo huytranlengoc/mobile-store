@@ -1,7 +1,6 @@
 package org.pearl.mobilepearl.service;
 
 import java.util.List;
-
 import org.pearl.mobilepearl.domain.Category;
 import org.pearl.mobilepearl.domain.DetailProduct;
 import org.pearl.mobilepearl.domain.Product;
@@ -13,4 +12,5 @@ public interface MobileStoreService {
 	public List<Product> findProducts(MobileSearchCriteria criteria);
 	public Product findProduct(Integer productId);
 	public DetailProduct findDetailProduct(Integer productId);
+		
 }
