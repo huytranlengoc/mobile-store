@@ -3,7 +3,7 @@ package org.pearl.mobilepearl.controller;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
-import org.pearl.mobilepearl.domain.POJO.CustomerRegistration;
+import org.pearl.mobilepearl.domain.dto.CustomerRegistration;
 import org.pearl.mobilepearl.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

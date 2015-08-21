@@ -1,6 +1,6 @@
 package org.pearl.mobilepearl.controller;
 
-import org.pearl.mobilepearl.domain.POJO.ShoppingCart;
+import org.pearl.mobilepearl.domain.dto.ShoppingCart;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

@@ -1,4 +1,4 @@
-
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <fieldset>
 	<legend>
 		<strong>Technical Specifications</strong>
@@ -114,4 +114,5 @@
 		</tr>
 	</table>
 </fieldset>
-<h3><a href="<c:url value="/cart/add/${product.id}"/>">Add to Cart</a></h3>
+<c:url var="addCartPath" value="/cart/add/${product.id}"/>
+<h3><a href="${addCartPath}">Add to Cart</a></h3>

@@ -9,6 +9,7 @@
 						<th>Number</th>
 						<th>Product Name</th>
 						<th>Quantity</th>
+						<th><a href="<c:url value="/cart/delAll"/>">Remove All</a></th>
 					</tr>
 					<c:set var="no" value="0" />
 					<c:forEach var="c" items="${cart.products}">
@@ -17,6 +18,7 @@
 							<td>${no}</td>
 							<td>${c.key.name}</td>
 							<td>${c.value}</td>
+							<td><a href="<c:url value="/cart/del/${c.key.id}"/>">Remove</a></td>
 						</tr>
 					</c:forEach>
 				</table>
@@ -24,8 +26,7 @@
 			</form>
 		</c:if>
 		<c:if test="${cart eq null}">
-			You don't choose any Product, can order <a
-				href="<c:url value="/index"/>">here</a>
+			You don't choose any Product, can order <a href="<c:url value="/index"/>">here</a>
 		</c:if>
 	</fieldset>
 </body>

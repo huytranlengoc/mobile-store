@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.pearl.mobilepearl.domain.Category;
 import org.pearl.mobilepearl.domain.Product;
-import org.pearl.mobilepearl.domain.POJO.MobileSearchCriteria;
+import org.pearl.mobilepearl.domain.dto.MobileSearchCriteria;
 import org.pearl.mobilepearl.service.MobileStoreService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

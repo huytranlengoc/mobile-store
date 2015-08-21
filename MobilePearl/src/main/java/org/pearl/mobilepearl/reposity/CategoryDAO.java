@@ -4,6 +4,6 @@ import java.util.List;
 
 import org.pearl.mobilepearl.domain.Category;
 
-public interface CategoryDAO {
+public interface CategoryDao {
 	public List<Category> getAllCateogories();
 }

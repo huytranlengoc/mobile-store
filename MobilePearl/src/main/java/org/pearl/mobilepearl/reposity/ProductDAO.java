@@ -4,9 +4,9 @@ import java.util.List;
 
 import org.pearl.mobilepearl.domain.DetailProduct;
 import org.pearl.mobilepearl.domain.Product;
-import org.pearl.mobilepearl.domain.POJO.MobileSearchCriteria;
+import org.pearl.mobilepearl.domain.dto.MobileSearchCriteria;
 
-public interface ProductDAO {
+public interface ProductDao {
 	public List<Product> getProducts();
 	public List<Product> findProducts(MobileSearchCriteria criteria);
 	public Product findProduct(Integer productId);
